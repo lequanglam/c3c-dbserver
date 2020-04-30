@@ -1,0 +1,32 @@
+{
+  "name": "c3c-dbserver",
+  "version": "1.0.0",
+  "description": "Database system for C3CBot - Using MQTT to communicate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lequanglam/c3c-dbserver.git"
+  },
+  "keywords": [
+    "c3c",
+    "c3cbot",
+    "database",
+    "db"
+  ],
+  "author": "UIRI",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lequanglam/c3c-dbserver/issues"
+  },
+  "homepage": "https://github.com/lequanglam/c3c-dbserver#readme",
+  "dependencies": {
+    "aedes": "^0.41.0",
+    "mqtt": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}

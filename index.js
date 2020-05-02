@@ -90,3 +90,14 @@ aedes.authenticate = function (client, username, password, callback) {
         callback(new Error("Bad username or password."), null);
     }
 }
+aedes.on("clientError", function (client, error) {
+    console.log(client.conn.remoteAddress, "failed:", error);
+});
+aedes.on("connectionError", function (client, error) {
+    console.log(client.conn.remoteAddress, "failed to connect:", error);
+});
+
+var resolveCMDInput = function (packet) {
+    
+}
+aedes.subscribe("cmd", resolveCMDInput, () => {});
